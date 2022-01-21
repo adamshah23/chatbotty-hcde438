@@ -1,38 +1,93 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(80, 80, 80);
+}
+.header {
+  height: 4rem;
+  border-bottom: 2px solid white;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 0 1rem;
+  background: blue;
+}
+.logo {
+  height: 3.5rem;
+  width: 3.5rem;
+  background: url("https://images.unsplash.com/photo-1503525523076-ca4aa2e47535?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=421&q=80");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+.footer {
+  height: 4rem;
+  width: 100%;
+  border-top: 2px solid white;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  background: rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+.text-input {
+  width: 96.8%;
+  border: 1px solid white;
+  height: 2.5rem;
+  border-radius: 1rem;
+  padding-right: 0 1rem;
+  background: black;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.send {
+  background: white;
+  border: none;
+  border-radius: 1rem;
+  height: 2rem;
+  width: 5rem;
+  position: absolute;
+  cursor: pointer;
+  right: 4rem;
+  border-style: ridge;
+  border-color: whitesmoke;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-block1 {
+  background: rgb(0, 204, 255);
+  height:2rem;
+  width:5rem;
+  border-radius:0.5rem;
+  margin-left: 3rem;
+  font-size: 1rem;
+  padding-left: 2rem;
+}
+
+.text-block2 {
+  background: white;
+  height:2rem;
+  width:12rem;
+  border-radius:0.5rem;
+  margin-left: 3rem;
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+.text-block3 {
+  background: rgb(0, 204, 255);
+  height:2rem;
+  width:8rem;
+  border-radius:0.5rem;
+  margin-left: 3rem;
+  font-size: 1rem;
+  padding-left: 1rem;
 }
