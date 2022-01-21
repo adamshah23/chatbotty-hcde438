@@ -1,5 +1,6 @@
 import './App.css';
 
+/* Basic function that takes a structured html to help layoput the react page */
 function App() {
   return (
     <div className="App">  
