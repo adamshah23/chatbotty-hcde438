@@ -8,12 +8,18 @@ function App() {
         <div className="logo"/>
         <span className="title">chatbotty</span>
       </header>
-      <div className="text-block1">Helloo!</div>
-      <div className="text-block2">Hi, what time is it botty??</div>
-      <div className="text-block3">Its 5:32pm PST! :)</div>
+      <div className="text-block1">
+        Helloo!
+      </div>
+      <div className="text-block1"> 
+        Hi, what time is it botty??
+      </div>
+      <div className="text-block1">
+        Its 5:32pm PST! :)
+      </div>
       <footer className='footer'> 
         <input className="text-input"/>
-        <button className="send">click me!</button>
+        <button className="button">⬆</button>
       </footer>
     </div>
   );
