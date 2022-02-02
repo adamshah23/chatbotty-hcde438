@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
   padding: 0 1rem;
-  background: rgba(221, 221, 221, 0.425);
+  background: rgba(221, 221, 221, 0.466);
 }
 .logo {
   height: 3.5rem;
@@ -34,14 +34,12 @@
   margin-left: 1rem;
   
 }
-
 .messages {
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-start;
   overflow: auto;
-  max-height: calc(100vh - 4rem - 4rem);
-  min-height: calc(100vh - 4rem - 4rem);
+  flex: 1;
   padding: 1rem;
 }
 .message {
@@ -54,13 +52,4 @@
   min-height: 2rem;
 }
 
-.message::after {
-    color: white;
-    width: 0px;
-    height: 0px;
-    border: 88px solid black;
-    border-top-color: transparent;
-    border-right-color: yellow;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-}
+

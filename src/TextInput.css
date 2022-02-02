@@ -1,29 +1,33 @@
 .footer {
-    height: 4rem;
     border-top: 2px solid white;
     display: flex;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 2rem;
     background: rgba(221, 221, 221, 0.425);
     position: relative;
   }
   .text-input {
     width: 100%;
-    border: 1px solid white;
-    height: 2rem;
-    border-radius: 1rem;
+    border: 1.5px solid white;
+    height: 2.2rem;
+    border-radius: 1.3rem;
+    margin: 0.5rem;
     padding: 0 1rem;
     background: black;
-    color: white;
+    color: white; 
   }
   .send {
     background: white;
-    border-radius: 50%;
+    border-radius: 1rem;
     border: none;
     border-style:groove;
-    height: 1.7rem;
-    width: 1.7rem;
+    height: 2rem;
+    width: 2rem;
     position: absolute;
-    right: 1.15rem;
+    right: 2.65rem;
     cursor: pointer;
+  }
+  .send:hover {
+    background: linear-gradient(#e66465, #9198e5);
+    border: 1px solid white;
   }
