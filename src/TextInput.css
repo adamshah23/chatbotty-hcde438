@@ -16,6 +16,12 @@
     background: black;
     color: white; 
   }
+
+  .text-input > input {
+    width: calc(100% - 50px)
+  }
+
+
   .send {
     background: white;
     border-radius: 1rem;
