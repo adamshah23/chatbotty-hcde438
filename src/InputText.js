@@ -15,6 +15,7 @@ function InputText(props) {
         }
       }
     
+      // added funtionality of a camera
       return (
         <footer className="footer">
          <button onClick={props.showCamera}

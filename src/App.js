@@ -20,6 +20,7 @@ function App() {
     setText([newMessage, ...messages]);
   }
 
+  //using props and states to take a picture
   function takePicture (img) {
     console.log(img)
     setShowCamera(false)

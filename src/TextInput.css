@@ -17,6 +17,7 @@
     color: white; 
   }
 
+  /* this for the camera to fit in the footer */
   .text-input > input {
     width: calc(100% - 50px)
   }
