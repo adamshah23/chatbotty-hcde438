@@ -1,6 +1,6 @@
 import "./TextInput.css"
 import { useState } from "react";
-import { FiSend, FiCamera } from 'react-icons/fi'
+import { BiPaperPlane, BiCamera } from 'react-icons/bi'
 
 function InputText(props) {
     const [text, enterMsg] = useState("")
@@ -20,7 +20,7 @@ function InputText(props) {
         <footer className="footer">
          <button onClick={props.showCamera}
             style={{left:10, right:'auto'}}>
-            <FiCamera style={{height:15, width:15}} />
+            <BiCamera style={{height:15, width:15}} />
         </button>
          
           <input
@@ -30,7 +30,7 @@ function InputText(props) {
             onKeyPress={onKeyPress}
           />
           <button className="send" onClick={send}>
-            ↑
+            <BiPaperPlane/>
           </button>
         </footer>
       );

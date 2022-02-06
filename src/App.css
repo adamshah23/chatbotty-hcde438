@@ -17,6 +17,8 @@
   padding: 0 1rem;
   background: rgba(221, 221, 221, 0.466);
 }
+
+
 .logo {
   height: 3.5rem;
   width: 3.5rem;
@@ -50,6 +52,20 @@
   border-radius: 0.4rem;
   border-color: 3px grey;
   min-height: 2rem;
+}
+
+.message-row {
+  width:100%;
+  display: flex;
+}
+
+.message-name {
+  position: absolute;
+  top: -10px;
+  left: 7px;
+  font-size: 0.55rem;
+  color:black;
+  font-weight: bold;
 }
 
 

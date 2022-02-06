@@ -1,0 +1,10 @@
+.change-user {
+    display:flex;
+    flex-direction: row;
+    justify-content: right;
+    margin: 0 12px;
+}
+
+.change-user input {
+    max-width: 8rem;
+}
