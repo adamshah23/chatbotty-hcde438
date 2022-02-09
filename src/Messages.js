@@ -1,9 +1,11 @@
+//code used to create a message and have a username fro which the message is coming from
+
 function Message(props) {
     return (
-    <div className = "message-row" style={{justifyContent: props.isMe ? 'flex-end' : 'flex-start'}}>
+    <div className = "message-row" style={{flexDirection: props.isUser ? "row-reverse" : "row"}}>
         <div className="message">
-            <div className="message-name">{props.name}</div>
-            {props.text}
+            <div className="message-name">{props.user}</div>
+            <span>{props.text}</span>
         </div> 
     </div>)
 }

@@ -2,6 +2,7 @@ import "./TextInput.css"
 import { useState } from "react";
 import { BiPaperPlane, BiCamera } from 'react-icons/bi'
 
+//code used to input text into the footer,  using states and props
 function InputText(props) {
     const [text, enterMsg] = useState("")
 

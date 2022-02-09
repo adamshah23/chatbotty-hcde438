@@ -43,29 +43,26 @@
   overflow: auto;
   flex: 1;
   padding: 1rem;
+
 }
 .message {
   color: white;
   background: black;
-  padding: 0.5rem 1rem;
-  margin: 0.2rem;
-  border-radius: 0.4rem;
-  border-color: 3px grey;
-  min-height: 2rem;
-}
-
-.message-row {
-  width:100%;
-  display: flex;
+  margin: 0.8rem;
+  border-radius: 0.3rem;
+  padding: 0.8rem;
+  max-width: 20rem;
+  min-height: auto;
+  overflow-wrap: break-word;
+  position: relative;
 }
 
 .message-name {
   position: absolute;
-  top: -10px;
-  left: 7px;
-  font-size: 0.55rem;
-  color:black;
-  font-weight: bold;
+  left: 0;
+  top: -1.1rem;
+  font-size: 0.8rem;
+  color:white;
 }
 
 

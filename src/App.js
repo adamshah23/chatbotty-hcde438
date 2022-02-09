@@ -1,4 +1,5 @@
 import "./App.css";
+import "./NamePicker.css"
 import TextInput from "./InputText";
 import { useState } from "react";
 import Message from "./Messages";
@@ -7,20 +8,22 @@ import Camera from 'react-snap-pic'
 import NamePicker from "./NamePicker";
 
 
-
+//main code for the app, including responsiveness, camera, and messaging
 function App() {
   const height = use100vh();
 
   const [showCamera, setShowCamera] = useState(false)
   const [messages, setText] = useState([]);
-  const [username, setUsername] = useState(localStorage.getItem("username") || "") // to add the component of setting a specific user name
+  const [username, setUsername] = useState(localStorage.getItem("username") || "") // to add the component of setting a specific user name, using localstorage to keep track
 
+  //component that is used to send messages
   function sendMessage(text) {
     if (!text) return;
     
     const newMessage = {
       text,
-      user: "adam"
+      time: Date.now(),
+      user: username,
     };
 
     setText([newMessage, ...messages]);
@@ -34,17 +37,21 @@ function App() {
 
   return (
     <div className="App"  style={{ height: height, minHeight: height, maxHeight: height }} >
+
       <div className="camera"> {showCamera && <Camera takePicture = {takePicture} />} </div>
+
       <header className="header">
-        <NamePicker saveName = {setUsername}/>
         <div className="logo" />
         <span className="title">chatbotty!</span>
+        <NamePicker setUsername = {setUsername}/> 
       </header>
+
       <div className="messages">
-        {messages.map((msg, i) => { const isUser = msg.name == username 
-          return <Message {...msg} isUser = {isUser} key={i} />})}
+        {messages.map((msg, i) => {return <Message {...msg} isUser = {msg.user === username} key={i} />})}
       </div>
+
       <TextInput sendMessage={sendMessage} showCamera={()=>setShowCamera(true)}/>
+
     </div>
   );
 }
