@@ -8,7 +8,7 @@ function NamePicker(props) {
     const [name, setName] = useState("")
 
     function send() {
-        props.saveName(name)
+        props.setUsername(name)
         setEditName(false)
         localStorage.setItem("username", name)
       }
@@ -16,9 +16,9 @@ function NamePicker(props) {
 
     if(editName) {
         return (
-            <div className="change-user">
+            <div className="name-picker">
              
-             <input
+             <input className="name-picker-input"
                 value = {name}
                 onChange={(e) => setName(e.target.value)}
                 onKeyPress={e => {if(e.key ===  'Enter') send()}}
@@ -33,12 +33,9 @@ function NamePicker(props) {
 
     } else {
         return (
-            <div className="change-user">
-             <button onClick={() => setEditName(true)}
-                style={{right:10}}>
-                <FiEdit style={{height:15, width:15}} />
-             </button>
-    
+            <div className="name-picker">
+              <span className="name-picker-name">{name || "Set Username: "}</span>
+              <FiEdit size="24" onClick={() => setEditName(true)} />
             </div>
           );
 
