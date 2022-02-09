@@ -8,14 +8,15 @@ import Camera from 'react-snap-pic'
 import NamePicker from "./NamePicker";
 
 
-
+//main code for the app, including responsiveness, camera, and messaging
 function App() {
   const height = use100vh();
 
   const [showCamera, setShowCamera] = useState(false)
   const [messages, setText] = useState([]);
-  const [username, setUsername] = useState(localStorage.getItem("username") || "") // to add the component of setting a specific user name
+  const [username, setUsername] = useState(localStorage.getItem("username") || "") // to add the component of setting a specific user name, using localstorage to keep track
 
+  //component that is used to send messages
   function sendMessage(text) {
     if (!text) return;
     
@@ -42,7 +43,7 @@ function App() {
       <header className="header">
         <div className="logo" />
         <span className="title">chatbotty!</span>
-        <NamePicker setUsername = {setUsername}/>
+        <NamePicker setUsername = {setUsername}/> 
       </header>
 
       <div className="messages">

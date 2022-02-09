@@ -2,11 +2,14 @@ import "./NamePicker.css"
 import { useState } from "react";
 import { FiEdit, FiCheck } from 'react-icons/fi'
 
+
+//code to create a username for chatting
 function NamePicker(props) {
 
-    const [editName, setEditName] = useState(false)
+    const [editName, setEditName] = useState(false) 
     const [name, setName] = useState("")
 
+    //this sets the username and saves it
     function send() {
         props.setUsername(name)
         setEditName(false)
